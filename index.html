@@ -229,35 +229,44 @@
             flex-shrink: 0;
         }
 
-        .hero-text {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 100px 80px;
-            z-index: 3;
+        .letter {
+            background: white;
+            padding: 30px;
+            border: 2px solid var(--c1);
+            border-radius: 16px;
+            box-shadow: var(--shadow-sm);
         }
 
-        .hero-text h1 {
-            font-size: clamp(48px, 8vw, 72px);
-            margin: 0 0 25px 0;
+        .letter h3 {
+            margin: 0 0 20px 0;
+            color: var(--c3);
             font-weight: 700;
-            line-height: 1.1;
-            background: linear-gradient(135deg, white 0%, rgba(255, 255, 255, 0.9) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            font-size: 1.3rem;
+            text-align: center;
         }
 
-        .hero-text em {
-            color: var(--c5);
-            font-style: normal;
-            font-weight: 700;
+        .letter ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .letter li {
+            margin-bottom: 12px;
+            padding: 12px 16px;
+            background: var(--c1);
+            border-radius: 10px;
+            border-left: 4px solid var(--c3);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .letter li:last-child {
+            margin-bottom: 0;
+        }
+
+        .letter li strong {
+            color: var(--c3);
         }
 
         .shop-btn {
@@ -369,65 +378,6 @@
             border-radius: 2px;
         }
 
-        .collabs-container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-            overflow: hidden;
-        }
-
-        .collabs-slider {
-            display: flex;
-            width: 100%;
-            height: 650px;
-            transition: transform 0.8s ease;
-        }
-
-        .collab-slide {
-            min-width: 100%;
-            height: 650px;
-            position: relative;
-            flex-shrink: 0;
-        }
-
-        .collab-slide img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 25px;
-        }
-
-        .collab-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
-            color: white;
-            padding: 50px 40px 40px;
-            border-radius: 0 0 25px 25px;
-        }
-
-        .collab-brand {
-            font-size: 2.8rem;
-            font-weight: 700;
-            margin: 0 0 12px 0;
-        }
-
-        .collab-tag {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .collab-tag i {
-            color: var(--c5);
-            font-size: 1.4rem;
-        }
-
         .icon-group {
             display: flex;
             align-items: center;
@@ -521,138 +471,6 @@
             color: var(--c3);
         }
 
-        .team-container,
-        .references-container {
-            max-width: 1000px;
-            margin: 0 auto 40px;
-        }
-
-        .team-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-
-        .references-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .team-member {
-            background: white;
-            padding: 25px 20px;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--c1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .team-member::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--c3);
-            transform: scaleX(0);
-            transition: transform 0.3s ease;
-        }
-
-        .team-member:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .team-member:hover::before {
-            transform: scaleX(1);
-        }
-
-        .team-avatar {
-            width: 75px;
-            height: 75px;
-            background: white;
-            border: 3px solid var(--c1);
-            border-radius: 50%;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: var(--c3);
-            box-shadow: 0 4px 15px rgba(158, 163, 245, 0.2);
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .team-member:hover .team-avatar {
-            border-color: var(--c3);
-            transform: scale(1.05);
-        }
-
-        .team-member h3 {
-            margin: 0 0 6px 0;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--text);
-            flex-grow: 1;
-        }
-
-        .team-member span {
-            color: var(--text-light);
-            font-size: 0.95rem;
-            font-weight: 500;
-            flex-shrink: 0;
-        }
-
-        .references {
-            background: white;
-            padding: 30px;
-            border: 2px solid var(--c1);
-            border-radius: 16px;
-            box-shadow: var(--shadow-sm);
-        }
-
-        .references h3 {
-            margin: 0 0 20px 0;
-            color: var(--c3);
-            font-weight: 700;
-            font-size: 1.3rem;
-            text-align: center;
-        }
-
-        .references ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .references li {
-            margin-bottom: 12px;
-            padding: 12px 16px;
-            background: var(--c1);
-            border-radius: 10px;
-            border-left: 4px solid var(--c3);
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-
-        .references li:last-child {
-            margin-bottom: 0;
-        }
-
-        .references li strong {
-            color: var(--c3);
-        }
-
         #branches {
             padding: 60px 20px;
             background: #fff;
@@ -693,24 +511,6 @@
             height: 260px;
             object-fit: cover;
         }
-
-        .branch-info {
-            padding: 20px;
-        }
-
-        .branch-info h3 {
-            margin: 0 0 8px 0;
-            font-weight: 700;
-            font-size: 1.2rem;
-            color: var(--c3);
-        }
-
-        .branch-info p {
-            margin: 0;
-            color: var(--text-light);
-            font-weight: 500;
-            font-size: 1rem;
-        }
     </style>
 
 <body>
@@ -724,148 +524,55 @@
                 <li><a href="#">Happy</a></li>
                 <li><a href="#">Mother's</a></li>
                 <li><a href="#">Day!</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Products <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">I</a></li>
-                        <li><a href="#">Love</a></li>
-                        <li><a href="#">You</a></li>
-                        <li><a href="#">Mommy!</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </nav>
 
     <header class="hero" id="home">
         <div class="hero-slider" id="slider">
-            <img src="https://s.hdnux.com/photos/01/40/57/71/25362025/7/rawImage.jpg" alt="Hero 1">
-            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029.github.io./refs/heads/main/miniso.jpg"
-                alt="Hero 2">
-            <img src="https://jingdaily.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ff8lauh0h%2Fproduction%2F3b93bfa3f0d2f6dc601d77c0ab122f3c0329793f-1920x1280.jpg%3Fq%3D95%26fit%3Dmax%26auto%3Dformat&w=3840&q=95"
-                alt="Hero 3">
-        </div>
-
-        <div class="hero-text">
-            <h1>Fun is<br>for <em>Life!</em></h1>
-            <a href="checkout.html" class="shop-btn">SHOP NOW <i class="fas fa-arrow-right"></i></a>
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/Green%20and%20Orange%20Happy%20Mother's%20Day%20Video%20(Presentation).png" alt="Hero 1">
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/625511268_10163782692395970_3981726878207792080_n.jpg" alt="Hero 2">
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/606350979_10163629975960970_8814408891909798477_n.jpg" alt="Hero 3">
         </div>
     </header>
 
-    <div class="section">
-        <h2 id="collaborations">Latest Collaborations</h2>
-
-        <div class="collabs-container">
-            <div class="collabs-slider" id="collabsSlider">
-                <div class="collab-slide">
-                    <img src="https://www.miniso.com/vancheerfile/images/2024/10/20241010144528802.png"
-                        alt="Harry Potter Collab">
-                    <div class="collab-info">
-                        <h3 class="collab-brand">Harry Potter</h3>
-                        <p class="collab-tag"><i class="fas fa-star"></i>Harry Potter Set</p>
-                    </div>
-                </div>
-                <div class="collab-slide">
-                    <img src="https://www.miniso.com/vancheerfile/images/2024/8/2024082009235934.jpg"
-                        alt="Snoopy Collab">
-                    <div class="collab-info">
-                        <h3 class="collab-brand">Snoopy</h3>
-                        <p class="collab-tag"><i class="fas fa-magic"></i>Snoopy Set</p>
-                    </div>
-                </div>
-                <div class="collab-slide">
-                    <img src="https://www.miniso.com/vancheerfile/images/2024/8/2024082009257529.jpg" alt="BT21 Collab">
-                    <div class="collab-info">
-                        <h3 class="collab-brand">BT21</h3>
-                        <p class="collab-tag"><i class="fas fa-heart"></i>BT21 Set</p>
-                    </div>
-                </div>
-                <div class="collab-slide">
-                    <img src="https://www.miniso.com/vancheerfile/images/2024/8/20240819141717931.png"
-                        alt="Loopy Collab">
-                    <div class="collab-info">
-                        <h3 class="collab-brand">Loopy</h3>
-                        <p class="collab-tag"><i class="fas fa-bolt"></i>Loopy Set</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <section id="about-section">
-        <h2 class="section-title mt-5">Meet the Team</h2>
+        <h2 class="section-title mt-5">Mother's Day Letter</h2>
+        <div class="letter-container">
+            <div class="letter">
+                <p>Happy Mother’s Day, Mommy!
 
-        <div class="team-container">
-            <div class="team-member">
-                <div class="team-avatar">
-                    <i class="fas fa-code"></i>
-                </div>
-                <h3>Liam Opulento</h3>
-                <span>Logo & Products</span>
-            </div>
-            <div class="team-member">
-                <div class="team-avatar">
-                    <i class="fas fa-file-alt"></i>
-                </div>
-                <h3>Emmanuel Simisim</h3>
-                <span>Logo & Cart</span>
-            </div>
-            <div class="team-member">
-                <div class="team-avatar">
-                    <i class="fas fa-palette"></i>
-                </div>
-                <h3>Ayesha Manaloto</h3>
-                <span>Design, Homepage, & About</span>
-            </div>
-        </div>
+                    Thank you for always being there for me and for everything you do for our family. Even if I do not
+                    always say it or notice it right away, I appreciate all the effort you make every day and morning to
+                    support and take care of us.
 
-        <div class="references-container">
-            <div class="references">
-                <h3><i class="fas fa-info-circle"></i> Project Details</h3>
+                    This school year especially, I realized how difficult it is to balance responsibilities, which made
+                    me appreciate your patience, support, and understanding even more. Thank you for always believing in
+                    me and encouraging me to do my best, even during times when I doubt myself. A lot of the things I
+                    have learned and achieved would not have been possible without your guidance and support.
+
+                    I hope you continue to stay healthy, happy, and safe! Happy Mother’s Day!</p>
                 <ul>
-                    <li><strong>UI Inspiration:</strong> Miniso official website design layout and product styling
-                        concepts</li>
-                    <li><strong>Images:</strong> Unsplash for high-quality product and lifestyle photos</li>
-                    <li><strong>Icons:</strong> Font Awesome & Flaticon for UI icons</li>
-                    <li><strong>Typography:</strong> Google Fonts – DM Sans</li>
-                    <li><strong>Color Palette:</strong> Custom pastel palette inspired by modern retail branding</li>
-                    <li><strong>Development Tools:</strong> HTML, CSS, JavaScript</li>
+                    <li>I love you forever</li>
+                    <li>I'll like you for always</li>
+                    <li>As long as I am living</li>
+                    <li>My mommy you'll be</li>
                 </ul>
             </div>
         </div>
     </section>
 
     <section id="branches">
-        <h2 class="branches-title">Our Branches</h2>
+        <h2 class="branches-title">Pictures!</h2>
         <div class="branches-grid">
             <div class="branch-card">
-                <img src="https://www.miniso.com/vancheerfile/images/2025/8/20250807165110548.JPG" alt="SM City Clark">
-                <div class="branch-info">
-                    <h3>SM City Clark</h3>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--c3); margin-right: 8px;"></i>Angeles City,
-                        Pampanga
-                    </p>
-                </div>
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/669387724_10164086565305970_1218509308715093226_n.jpg" alt="Branch 1">
             </div>
             <div class="branch-card">
-                <img src="https://www.miniso.com/vancheerfile/images/2024/11/20241112101735575.jpg"
-                    alt="SM Urdaneta Central">
-                <div class="branch-info">
-                    <h3>SM Urdaneta Central</h3>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--c3); margin-right: 8px;"></i>Urdaneta City,
-                        Pangasinan
-                    </p>
-                </div>
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/60702280_10157190467470970_2333808980091994112_n.jpg" style="object-position: top; object-fit: cover;" alt="Branch 2">
             </div>
             <div class="branch-card">
-                <img src="https://www.miniso.com/vancheerfile/images/2024/11/20241112104812175.png"
-                    alt="SM City Olongapo">
-                <div class="branch-info">
-                    <h3>SM City Olongapo</h3>
-                    <p><i class="fas fa-map-marker-alt" style="color: var(--c3); margin-right: 8px;"></i>Olongapo City,
-                        Zambales
-                    </p>
-                </div>
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/558092564_10163268969530970_3349949700323418882_n.jpg" alt="Branch 3">
             </div>
         </div>
     </section>
