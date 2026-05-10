@@ -210,7 +210,9 @@
         .hero {
             position: relative;
             height: 100vh;
-            min-height: 600px;
+            height: 100svh;
+            min-height: 500px;
+            width: 100%;
             overflow: hidden;
         }
 
@@ -222,9 +224,8 @@
         }
 
         .hero-slider img {
-            width: 100%;
-            height: 100vh;
-            min-height: 600px;
+            width: 100vw;
+            height: 100%;
             object-fit: cover;
             flex-shrink: 0;
         }
@@ -512,12 +513,10 @@
             object-fit: cover;
         }
 
-        @media (max-width: 768px) {
-
-            .hero,
-            .hero-slider img {
-                height: 60vh;
-                min-height: 300px;
+        @media (max-width: 480px) {
+            .hero {
+                height: 80svh;
+                min-height: 400px;
             }
 
             .hero-slider img {
@@ -541,137 +540,137 @@
         </div>
     </nav>
 
-        <header class="hero" id="home">
-            <div class="hero-slider" id="slider">
-                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/Green%20and%20Orange%20Happy%20Mother's%20Day%20Video%20(Presentation).png"
-                    alt="Hero 1">
-                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/625511268_10163782692395970_3981726878207792080_n.jpg"
-                    alt="Hero 2">
-                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/606350979_10163629975960970_8814408891909798477_n.jpg"
-                    alt="Hero 3">
+    <header class="hero" id="home">
+        <div class="hero-slider" id="slider">
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/Green%20and%20Orange%20Happy%20Mother's%20Day%20Video%20(Presentation).png"
+                alt="Hero 1">
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/625511268_10163782692395970_3981726878207792080_n.jpg"
+                alt="Hero 2">
+            <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/606350979_10163629975960970_8814408891909798477_n.jpg"
+                alt="Hero 3">
+        </div>
+    </header>
+
+    <section id="about-section">
+        <h2 class="section-title    ">Mother's Day Letter</h2>
+        <div class="letter-container">
+            <div class="letter">
+                <p>Happy Mother’s Day, Mommy!
+
+                    Thank you for always being there for me and for everything you do for our family. Even if I do
+                    not
+                    always say it or notice it right away, I appreciate all the effort you make every day and
+                    morning to
+                    support and take care of us.
+
+                    This school year especially, I realized how difficult it is to balance responsibilities, which
+                    made
+                    me appreciate your patience, support, and understanding even more. Thank you for always
+                    believing in
+                    me and encouraging me to do my best, even during times when I doubt myself. A lot of the things
+                    I
+                    have learned and achieved would not have been possible without your guidance and support.
+
+                    I hope you continue to stay healthy, happy, and safe! Happy Mother’s Day!</p>
+                <ul>
+                    <li>I love you forever</li>
+                    <li>I'll like you for always</li>
+                    <li>As long as I am living</li>
+                    <li>My mommy you'll be</li>
+                </ul>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <section id="about-section">
-            <h2 class="section-title">Mother's Day Letter</h2>
-            <div class="letter-container">
-                <div class="letter">
-                    <p>Happy Mother’s Day, Mommy!
-
-                        Thank you for always being there for me and for everything you do for our family. Even if I do
-                        not
-                        always say it or notice it right away, I appreciate all the effort you make every day and
-                        morning to
-                        support and take care of us.
-
-                        This school year especially, I realized how difficult it is to balance responsibilities, which
-                        made
-                        me appreciate your patience, support, and understanding even more. Thank you for always
-                        believing in
-                        me and encouraging me to do my best, even during times when I doubt myself. A lot of the things
-                        I
-                        have learned and achieved would not have been possible without your guidance and support.
-
-                        I hope you continue to stay healthy, happy, and safe! Happy Mother’s Day!</p>
-                    <ul>
-                        <li>I love you forever</li>
-                        <li>I'll like you for always</li>
-                        <li>As long as I am living</li>
-                        <li>My mommy you'll be</li>
-                    </ul>
-                </div>
+    <section id="branches">
+        <h2 class="branches-title">Pictures!</h2>
+        <div class="branches-grid">
+            <div class="branch-card">
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/669387724_10164086565305970_1218509308715093226_n.jpg"
+                    alt="Branch 1">
             </div>
-        </section>
-
-        <section id="branches">
-            <h2 class="branches-title">Pictures!</h2>
-            <div class="branches-grid">
-                <div class="branch-card">
-                    <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/669387724_10164086565305970_1218509308715093226_n.jpg"
-                        alt="Branch 1">
-                </div>
-                <div class="branch-card">
-                    <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/60702280_10157190467470970_2333808980091994112_n.jpg"
-                        style="object-position: top; object-fit: cover;" alt="Branch 2">
-                </div>
-                <div class="branch-card">
-                    <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/558092564_10163268969530970_3349949700323418882_n.jpg"
-                        alt="Branch 3">
-                </div>
+            <div class="branch-card">
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/60702280_10157190467470970_2333808980091994112_n.jpg"
+                    style="object-position: top; object-fit: cover;" alt="Branch 2">
             </div>
-        </section>
+            <div class="branch-card">
+                <img src="https://raw.githubusercontent.com/laopulento2029/laopulento2029-hmd/refs/heads/main/558092564_10163268969530970_3349949700323418882_n.jpg"
+                    alt="Branch 3">
+            </div>
+        </div>
+    </section>
 
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                setTimeout(() => {
-                    document.getElementById('loading').classList.add('hidden');
-                }, 1500);
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+            }, 1500);
 
-                window.addEventListener('scroll', () => {
-                    const navbar = document.getElementById('navbar');
-                    if (window.scrollY > 50) {
-                        navbar.classList.add('scrolled');
-                    } else {
-                        navbar.classList.remove('scrolled');
+            window.addEventListener('scroll', () => {
+                const navbar = document.getElementById('navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+
+            let heroIndex = 0;
+            const heroSlider = document.getElementById("slider");
+            const totalHero = heroSlider.children.length;
+
+            setInterval(() => {
+                heroIndex = (heroIndex + 1) % totalHero;
+                heroSlider.style.transform = `translateX(-${heroIndex * 100}%)`;
+            }, 4000);
+
+            let collabIndex = 0;
+            const collabsSlider = document.getElementById("collabsSlider");
+            const totalCollabs = collabsSlider.children.length;
+
+            setInterval(() => {
+                collabIndex = (collabIndex + 1) % totalCollabs;
+                collabsSlider.style.transform = `translateX(-${collabIndex * 100}%)`;
+            }, 5000);
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
                     }
                 });
+            });
 
-                let heroIndex = 0;
-                const heroSlider = document.getElementById("slider");
-                const totalHero = heroSlider.children.length;
+            function setActiveNavLink() {
+                const navLinks = document.querySelectorAll('.nav-links li');
+                const sections = ['#home', '#products', '#arrivals', '#about-section', '#branches'];
 
-                setInterval(() => {
-                    heroIndex = (heroIndex + 1) % totalHero;
-                    heroSlider.style.transform = `translateX(-${heroIndex * 100}%)`;
-                }, 4000);
-
-                let collabIndex = 0;
-                const collabsSlider = document.getElementById("collabsSlider");
-                const totalCollabs = collabsSlider.children.length;
-
-                setInterval(() => {
-                    collabIndex = (collabIndex + 1) % totalCollabs;
-                    collabsSlider.style.transform = `translateX(-${collabIndex * 100}%)`;
-                }, 5000);
-
-                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        e.preventDefault();
-                        const target = document.querySelector(this.getAttribute('href'));
-                        if (target) {
-                            target.scrollIntoView({
-                                behavior: 'smooth',
-                                block: 'start'
-                            });
-                        }
-                    });
-                });
-
-                function setActiveNavLink() {
-                    const navLinks = document.querySelectorAll('.nav-links li');
-                    const sections = ['#home', '#products', '#arrivals', '#about-section', '#branches'];
-
-                    sections.forEach(section => {
-                        const targetSection = document.querySelector(section);
-                        if (targetSection) {
-                            const rect = targetSection.getBoundingClientRect();
-                            if (rect.top <= 90 && rect.bottom >= 90) {
-                                navLinks.forEach(link => link.classList.remove('active'));
-                                const activeLink = Array.from(navLinks).find(link =>
-                                    link.querySelector('a')?.getAttribute('href') === section
-                                );
-                                if (activeLink) {
-                                    activeLink.classList.add('active');
-                                }
+                sections.forEach(section => {
+                    const targetSection = document.querySelector(section);
+                    if (targetSection) {
+                        const rect = targetSection.getBoundingClientRect();
+                        if (rect.top <= 90 && rect.bottom >= 90) {
+                            navLinks.forEach(link => link.classList.remove('active'));
+                            const activeLink = Array.from(navLinks).find(link =>
+                                link.querySelector('a')?.getAttribute('href') === section
+                            );
+                            if (activeLink) {
+                                activeLink.classList.add('active');
                             }
                         }
-                    });
-                }
+                    }
+                });
+            }
 
-                window.addEventListener('scroll', setActiveNavLink);
-                setActiveNavLink();
-            });
-        </script>
+            window.addEventListener('scroll', setActiveNavLink);
+            setActiveNavLink();
+        });
+    </script>
 </body>
 
 </html>
